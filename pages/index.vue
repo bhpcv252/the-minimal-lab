@@ -90,6 +90,7 @@ export default {
     position: absolute;
     bottom: utils.pxToRem(390);
     right: utils.pxToRem(133);
+    line-height: normal;
   }
 
   .contact {
@@ -120,6 +121,7 @@ export default {
 
       svg {
         width: 100%;
+        height: utils.pxToRem(44);
       }
     }
 
