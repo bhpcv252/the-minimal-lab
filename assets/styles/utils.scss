@@ -1,0 +1,12 @@
+@use "sass:math";
+@use 'variables';
+
+@function calcBaseVW() {
+  $result: math.div(variables.$baseFont * 100,  variables.$baseWidth);
+  @return ($result * 1vw);
+}
+
+@function pxToRem($px) {
+  $result: math.div($px, variables.$baseFont);
+  @return ($result * 1rem);
+}
