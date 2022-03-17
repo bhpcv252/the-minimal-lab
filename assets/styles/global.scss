@@ -95,6 +95,11 @@ body {
   overflow: hidden;
 }
 
+::selection {
+  background-color: $textColor;
+  color: $bgColor;
+}
+
 .container {
   padding: 0 pxToRem(20) 0 pxToRem(20);
 }
