@@ -5,12 +5,10 @@
         The Minimal Lab
       </div>
       <div class="right-col">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <g data-name="Group 1789">
-            <path data-name="Path 6076" d="M7550-3513h24" transform="translate(-7550 3525)" style="fill:none;stroke:#292929"/>
-            <path data-name="Path 6077" d="M7550-3513h24" transform="rotate(90 2024.5 -5525.5)" style="fill:none;stroke:#292929"/>
-          </g>
-        </svg>
+        <div class="plus-wrapper">
+          <div class="line line-v"></div>
+          <div class="line line-h"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -53,6 +51,7 @@ export default Header
       line-height: 1;
       padding: utils.pxToRem(26) 0 utils.pxToRem(26) 0;
       position: relative;
+      text-transform: uppercase;
 
       &::after {
         content: '';
@@ -81,10 +80,29 @@ export default Header
         bottom: 0;
       }
 
-      svg {
+      .plus-wrapper {
+        position: relative;
         width: utils.pxToRem(24);
         height: utils.pxToRem(24);
         margin: 0 0 0 auto;
+
+        .line {
+          background-color: variables.$textColor;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          &-v {
+            height: 100%;
+            width: 1px;
+          }
+
+          &-h {
+            width: 100%;
+            height: 1px;
+          }
+        }
       }
     }
   }
