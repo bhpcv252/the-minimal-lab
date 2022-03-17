@@ -20,7 +20,7 @@
           </svg>
         </div>
         <div class="contact-email">
-          (Contact Us)
+          <a href="mailto:hello@theminimallab.com">(HELLO@THEMINIMALLAB.COM)</a>
         </div>
       </div>
       <div class="big-text big-text-1">
@@ -122,6 +122,15 @@ export default {
         width: 100%;
       }
     }
+
+    .contact-email {
+
+      a {
+        color: variables.$textColor;
+        display: block;
+      }
+    }
+
   }
 
   .big-text {
