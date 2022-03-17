@@ -1,5 +1,12 @@
 <template>
   <div class="home">
+    <Html lang="en-US">
+    <Head>
+      <Title>The Minimal Lab</Title>
+      <Meta name="description" content="We Create Digital Experiences With Focus on Minimalism - The Minimal Lab" />
+      <Meta name="keywords" content="Digital, Digital Experiences, Website, Design, Development, Studio, Minimal, Minimalist, Minimalism, Lab, Webgl, Animation, Business Website" />
+    </Head>
+    </Html>
     <Header />
     <div class="coming-soon">
       <div class="image-wrapper">
