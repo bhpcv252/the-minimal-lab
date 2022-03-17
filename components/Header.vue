@@ -45,13 +45,16 @@ export default Header
     grid-template-columns: utils.pxToRem(319) utils.pxToRem(118);
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 
     .left-col {
       font-size: utils.pxToRem(15);
       line-height: 1;
-      padding: utils.pxToRem(26) 0 utils.pxToRem(26) 0;
       position: relative;
       text-transform: uppercase;
+      height: 100%;
+      display: grid;
+      align-items: center;
 
       &::after {
         content: '';
@@ -66,8 +69,10 @@ export default Header
     }
 
     .right-col {
-      padding: utils.pxToRem(21) 0 utils.pxToRem(22) 0;
       position: relative;
+      height: 100%;
+      display: grid;
+      align-items: center;
 
       &::after {
         content: '';
