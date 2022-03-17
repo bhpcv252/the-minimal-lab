@@ -1,13 +1,20 @@
 <template>
   <div class="coming-soon">
-    The Minimal Lab
+    <Header />
   </div>
 </template>
 
 <script>
+import Header from '@/components/Header.vue'
 
+export default {
+  name: 'ComingSoon',
+  components: {
+    Header
+  }
+}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

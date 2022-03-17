@@ -98,3 +98,7 @@ body {
     overflow: hidden;
   }
 }
+
+.container {
+  padding: 0 pxToRem(20) 0 pxToRem(20);
+}
