@@ -120,6 +120,7 @@ export default {
 
       svg {
         width: 100%;
+        height: utils.pxToRem(44);
       }
     }
 
