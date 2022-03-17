@@ -50,7 +50,7 @@ export default {
 
     &-1 {
       top: utils.pxToRem(21);
-      left: utils.pxToRem(36);
+      left: utils.pxToRem(20);
       width: utils.pxToRem(1380);
       line-height: utils.pxToRem(285);
     }
