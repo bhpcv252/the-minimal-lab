@@ -88,13 +88,13 @@ html  {
 body {
   font-size: 1rem;
   font-family: 'Helvetica', sans-serif;
-  overflow-x: hidden;
   position: relative;
   min-height: 100%;
   color: $textColor;
   background-color: $bgColor;
+  overflow: hidden;
+}
 
-  &.modal-open {
-    overflow: hidden;
-  }
+.container {
+  padding: 0 pxToRem(20) 0 pxToRem(20);
 }
