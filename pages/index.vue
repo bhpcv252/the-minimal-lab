@@ -127,8 +127,8 @@ export default {
     line-height: normal;
 
     @media (max-width: variables.$mobileWidth + 'px') {
-      width: utils.pxToRem(127, variables.$baseMobileFont);
-      bottom: 26.6535294%;
+      width: utils.pxToRem(135, variables.$baseMobileFont);
+      bottom: 21.6535294%;
       right: utils.pxToRem(42, variables.$baseMobileFont);
     }
   }
