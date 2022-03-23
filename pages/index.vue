@@ -82,16 +82,14 @@ export default {
     background-size: cover;
 
     @media (max-width: variables.$tabWidth + 'px') {
-      top: 50%;
+      top: 28.8009701%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, 0);
       width: 35.4 * 1vh;
       height: 34.95 * 1vh;
     }
 
     @media (max-width: variables.$mobileWidth + 'px') {
-      transform: translate(-50%, 0);
-      top: 28.8009701%;
       width: utils.pxToRem(236, variables.$baseMobileFont);
       height: utils.pxToRem(233, variables.$baseMobileFont);
     }
@@ -206,8 +204,8 @@ export default {
 
       @media (max-width: variables.$mobileWidth + 'px') {
         width: utils.pxToRem(321, variables.$baseMobileFont);
-        top: utils.pxToRem(16, variables.$baseMobileFont);
-        right: utils.pxToRem(56, variables.$baseMobileFont);
+        top: utils.pxToRem(11, variables.$baseMobileFont);
+        right: utils.pxToRem(64, variables.$baseMobileFont);
         line-height: utils.pxToRem(70, variables.$baseMobileFont);
       }
     }
@@ -219,8 +217,8 @@ export default {
       line-height: utils.pxToRem(249);
 
       @media (max-width: variables.$mobileWidth + 'px') {
-        bottom: utils.pxToRem(26, variables.$baseMobileFont);
-        left: utils.pxToRem(260, variables.$baseMobileFont);
+        bottom: utils.pxToRem(22, variables.$baseMobileFont);
+        left: utils.pxToRem(268, variables.$baseMobileFont);
         width: utils.pxToRem(119, variables.$baseMobileFont);
         line-height: utils.pxToRem(58, variables.$baseMobileFont);
       }
@@ -236,7 +234,7 @@ export default {
 
     @media (max-width: variables.$mobileWidth + 'px') {
       bottom: utils.pxToRem(14, variables.$baseMobileFont);
-      left: utils.pxToRem(16, variables.$baseMobileFont);
+      left: utils.pxToRem(8, variables.$baseMobileFont);
     }
 
     .circle {

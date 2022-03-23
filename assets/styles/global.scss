@@ -108,6 +108,6 @@ body {
   padding: 0 pxToRem(20) 0 pxToRem(20);
 
   @media (max-width: $mobileWidth + 'px') {
-    padding: 0 pxToRem(16, $baseMobileFont) 0 pxToRem(16, $baseMobileFont);
+    padding: 0 pxToRem(8, $baseMobileFont) 0 pxToRem(8, $baseMobileFont);
   }
 }
