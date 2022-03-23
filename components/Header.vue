@@ -44,8 +44,17 @@ export default Header
     display: grid;
     grid-template-columns: utils.pxToRem(319) utils.pxToRem(118);
     justify-content: space-between;
-    align-items: center;
     height: 100%;
+
+    @media (max-width: variables.$tabWidth + 'px') {
+      grid-template-columns: utils.pxToRem(429) utils.pxToRem(218);
+    }
+
+    @media (max-width: variables.$mobileWidth + 'px') {
+      grid-template-columns: utils.pxToRem(292, variables.$baseMobileFont) auto;
+      justify-content: unset;
+      align-items: unset;
+    }
 
     .left-col {
       font-size: utils.pxToRem(15);
@@ -55,6 +64,14 @@ export default Header
       height: 100%;
       display: grid;
       align-items: center;
+
+      @media (max-width: variables.$tabWidth + 'px') {
+        font-size: utils.pxToRem(34);
+      }
+
+      @media (max-width: variables.$mobileWidth + 'px') {
+        font-size: utils.pxToRem(15, variables.$baseMobileFont);
+      }
 
       &::after {
         content: '';
@@ -83,6 +100,10 @@ export default Header
         top: 0;
         left: 0;
         bottom: 0;
+
+        @media (max-width: variables.$mobileWidth + 'px') {
+          content: unset;
+        }
       }
 
       .plus-wrapper {
@@ -90,6 +111,16 @@ export default Header
         width: utils.pxToRem(24);
         height: utils.pxToRem(24);
         margin: 0 0 0 auto;
+
+        @media (max-width: variables.$tabWidth + 'px') {
+          width: utils.pxToRem(54);
+          height: utils.pxToRem(54);
+        }
+
+        @media (max-width: variables.$mobileWidth + 'px') {
+          width: utils.pxToRem(20, variables.$baseMobileFont);
+          height: utils.pxToRem(20, variables.$baseMobileFont);
+        }
 
         .line {
           background-color: variables.$textColor;

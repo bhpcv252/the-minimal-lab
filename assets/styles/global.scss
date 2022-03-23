@@ -82,7 +82,11 @@
 
 html  {
   scroll-behavior: smooth;
-  font-size: calcBaseVW();
+  font-size: calcBaseVW($baseFont, $baseWidth);
+
+  @media (max-width: $mobileWidth + 'px') {
+    font-size: calcBaseVW($baseMobileFont, $baseMobileWidth);
+  }
 }
 
 body {
@@ -102,4 +106,8 @@ body {
 
 .container {
   padding: 0 pxToRem(20) 0 pxToRem(20);
+
+  @media (max-width: $mobileWidth + 'px') {
+    padding: 0 pxToRem(16, $baseMobileFont) 0 pxToRem(16, $baseMobileFont);
+  }
 }
