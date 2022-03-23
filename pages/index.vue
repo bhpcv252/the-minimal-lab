@@ -91,7 +91,7 @@ export default {
 
     @media (max-width: variables.$mobileWidth + 'px') {
       transform: translate(-50%, 0);
-      top: utils.pxToRem(228, variables.$baseMobileFont);
+      top: 28.8009701%;
       width: utils.pxToRem(236, variables.$baseMobileFont);
       height: utils.pxToRem(233, variables.$baseMobileFont);
     }
@@ -128,7 +128,7 @@ export default {
 
     @media (max-width: variables.$mobileWidth + 'px') {
       width: utils.pxToRem(127, variables.$baseMobileFont);
-      bottom: utils.pxToRem(211, variables.$baseMobileFont);
+      bottom: 26.6535294%;
       right: utils.pxToRem(42, variables.$baseMobileFont);
     }
   }

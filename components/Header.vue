@@ -29,6 +29,17 @@ export default Header
 .header {
   position: relative;
 
+  &::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: variables.$textColor;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
   &::after {
     content: '';
     width: 100%;
