@@ -81,6 +81,21 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media (max-width: variables.$tabWidth + 'px') {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 35.4 * 1vh;
+      height: 34.95 * 1vh;
+    }
+
+    @media (max-width: variables.$mobileWidth + 'px') {
+      transform: translate(-50%, 0);
+      top: utils.pxToRem(228, variables.$baseMobileFont);
+      width: utils.pxToRem(236, variables.$baseMobileFont);
+      height: utils.pxToRem(233, variables.$baseMobileFont);
+    }
+
     .tape {
       position: absolute;
       top: utils.pxToRem(-66.5);
@@ -88,6 +103,18 @@ export default {
       transform: translateX(-50%);
       width: utils.pxToRem(262);
       height: utils.pxToRem(119);
+
+      @media (max-width: variables.$tabWidth + 'px') {
+        top: -4.65 * 1vh;
+        width: 18.15 * 1vh;
+        height: 8.25 * 1vh;
+      }
+
+      @media (max-width: variables.$mobileWidth + 'px') {
+        top: utils.pxToRem(-31, variables.$baseMobileFont);
+        width: utils.pxToRem(121, variables.$baseMobileFont);
+        height: utils.pxToRem(55, variables.$baseMobileFont);
+      }
     }
   }
 
@@ -98,6 +125,12 @@ export default {
     bottom: utils.pxToRem(390);
     right: utils.pxToRem(133);
     line-height: normal;
+
+    @media (max-width: variables.$mobileWidth + 'px') {
+      width: utils.pxToRem(127, variables.$baseMobileFont);
+      bottom: utils.pxToRem(211, variables.$baseMobileFont);
+      right: utils.pxToRem(42, variables.$baseMobileFont);
+    }
   }
 
   .contact {
@@ -112,6 +145,14 @@ export default {
     font-style: oblique;
     align-items: center;
     gap: utils.pxToRem(32);
+
+    @media (max-width: variables.$mobileWidth + 'px') {
+      width: utils.pxToRem(330, variables.$baseMobileFont);
+      bottom: utils.pxToRem(14, variables.$baseMobileFont);
+      grid-template-columns: utils.pxToRem(18, variables.$baseMobileFont) auto;
+      padding-bottom: utils.pxToRem(4, variables.$baseMobileFont);
+      gap: utils.pxToRem(12, variables.$baseMobileFont);
+    }
 
     &::after {
       content: '';
@@ -129,6 +170,10 @@ export default {
       svg {
         width: 100%;
         height: utils.pxToRem(44);
+
+        @media (max-width: variables.$mobileWidth + 'px') {
+          height: utils.pxToRem(12, variables.$baseMobileFont);
+        }
       }
     }
 
@@ -146,12 +191,25 @@ export default {
     font-size: utils.pxToRem(344);
     position: absolute;
     letter-spacing: utils.pxToRem(-6.88);
+    pointer-events: none;
+
+    @media (max-width: variables.$mobileWidth + 'px') {
+      font-size: utils.pxToRem(80, variables.$baseMobileFont);
+      letter-spacing: utils.pxToRem(-1.6, variables.$baseMobileFont);
+    }
 
     &-1 {
       top: utils.pxToRem(21);
-      left: utils.pxToRem(20);
+      right: utils.pxToRem(533);
       width: utils.pxToRem(1380);
       line-height: utils.pxToRem(285);
+
+      @media (max-width: variables.$mobileWidth + 'px') {
+        width: utils.pxToRem(321, variables.$baseMobileFont);
+        top: utils.pxToRem(16, variables.$baseMobileFont);
+        right: utils.pxToRem(56, variables.$baseMobileFont);
+        line-height: utils.pxToRem(70, variables.$baseMobileFont);
+      }
     }
 
     &-2 {
@@ -159,6 +217,13 @@ export default {
       left: utils.pxToRem(1411);
       width: utils.pxToRem(509);
       line-height: utils.pxToRem(249);
+
+      @media (max-width: variables.$mobileWidth + 'px') {
+        bottom: utils.pxToRem(26, variables.$baseMobileFont);
+        left: utils.pxToRem(260, variables.$baseMobileFont);
+        width: utils.pxToRem(119, variables.$baseMobileFont);
+        line-height: utils.pxToRem(58, variables.$baseMobileFont);
+      }
     }
   }
 
@@ -169,11 +234,21 @@ export default {
     display: grid;
     grid-template-columns: 50% 50%;
 
+    @media (max-width: variables.$mobileWidth + 'px') {
+      bottom: utils.pxToRem(14, variables.$baseMobileFont);
+      left: utils.pxToRem(16, variables.$baseMobileFont);
+    }
+
     .circle {
       width: utils.pxToRem(64);
       height: utils.pxToRem(64);
       border-radius: 50%;
       background-color: variables.$textColor;
+
+      @media (max-width: variables.$mobileWidth + 'px') {
+        width: utils.pxToRem(16, variables.$baseMobileFont);
+        height: utils.pxToRem(16, variables.$baseMobileFont);
+      }
     }
   }
 }
